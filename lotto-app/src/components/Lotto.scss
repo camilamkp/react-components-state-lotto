@@ -1,0 +1,58 @@
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+
+    .numbers
+    {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        .number
+        {
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            padding: 20px;
+            margin-right: 10px;
+            border: 1px solid cyan;
+            border-radius: 50%;
+
+            &:last-child
+            {
+                background: cyan;
+            }
+        }
+    }
+
+    .hidden
+    {
+        .number
+        {
+            list-style: none;
+        }
+    }
+
+    .resetBtn, .showMeBtn
+    {
+        background: #282c34;
+        border: 1px solid cyan;
+        padding: 10px;
+        margin-right: 5px;
+        border-radius: 5px;
+        color: #f1f1f1;
+        cursor: pointer;
+
+        &:focus
+        {
+            background: #282c34;
+        }
+    }
+    .showMeBtn
+    {
+        background: cyan !important;
+        color: #282c34;
+    }
+}
