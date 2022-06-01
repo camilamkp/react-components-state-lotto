@@ -1,6 +1,6 @@
 # Lotto numbers
 
-Exercise to practice REACT and SCSS.
+**Exercise to practice REACT and SCSS.**
 
 ![example](example.gif)
 
