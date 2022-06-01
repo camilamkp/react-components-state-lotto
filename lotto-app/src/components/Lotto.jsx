@@ -27,7 +27,7 @@ const Lotto = () => {
                 const min = 1;
                 const max = 49;
                 emptyArray[i] = Math.floor(Math.random() * max) + min
-                if(i == 6)
+                if(i === 6)
                     emptyArray[i] = Math.floor(Math.random() * 10) + 1
             }
            
@@ -41,13 +41,13 @@ const Lotto = () => {
             
             <h3 className='text'>Generating lucky numbers</h3>
             
-            <ul className={isEmpty ? 'numbers' : 'hidden'}>
+            <ul className={ isEmpty ? 'numbers' : 'hidden' }>
                 {
                     lottoNumber.map((lotto, i ) =>
                     {
                         return <li 
-                        key={i}
-                        className='number'>{lotto}</li>
+                        key={ i }
+                        className='number'>{ lotto }</li>
                     })
                 }
             </ul>
